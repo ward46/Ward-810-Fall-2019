@@ -1,0 +1,15 @@
+let saleItem = require ('./saleItem);
+let saleOrder = require ('./saleOrder);
+
+
+let gidget= new saleItem ("Gidget", 20, 1.0);
+let widget= new saleItem ("Widget", 10, 2.5);
+
+
+let customerOrder = new saleOrder("Customer", 0.10);
+
+
+customerOrder.addItem(gidget);
+customerOrder.addItem(widget);
+
+console.log(customerOrder.totalPrice());

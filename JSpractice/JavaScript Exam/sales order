@@ -1,0 +1,23 @@
+
+function saleItem(price,quantity,product){
+    let item={}
+    item.price=price;
+    item.quantity=quantity;
+    item.product=product;
+
+    item.values=function(){
+        return item.quantity*item.price;
+    }
+
+
+    return item;
+
+    
+    }
+    module.export=saleItem;
+
+
+
+
+
+
